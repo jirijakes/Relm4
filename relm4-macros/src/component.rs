@@ -1,14 +1,14 @@
+use internal::attrs::Attrs;
+use internal::token_streams::{TokenStreams, TraitImplDetails};
+use internal::visitors::{ComponentVisitor, PreAndPostView, ViewOutputExpander};
 use proc_macro2::TokenStream as TokenStream2;
 use quote::{quote, quote_spanned, ToTokens};
 use syn::parse_quote;
 use syn::visit_mut::VisitMut;
 
-use crate::attrs::Attrs;
-use crate::token_streams::{TokenStreams, TraitImplDetails};
 use crate::util;
-use crate::visitors::{ComponentVisitor, PreAndPostView, ViewOutputExpander};
 
-pub(crate) fn generate_tokens(
+pub(super) fn generate_tokens(
     global_attributes: Attrs,
     mut component_impl: syn::ItemImpl,
 ) -> TokenStream2 {

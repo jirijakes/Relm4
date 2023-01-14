@@ -3,7 +3,9 @@ members = [
     "relm4",
     "relm4-components",
     "relm4-macros",
+    "relm4-macros/relm4-format",
+    "relm4-macros/relm4-macros-internal",
     "examples",
     "examples/libadwaita",
-    "examples/relm4-components"
+    "examples/relm4-components",
 ]
