@@ -34,4 +34,4 @@ internal = { path = "./relm4-macros-internal", package = "relm4-macros-internal"
 
 [dev-dependencies]
 relm4 = { path = "../relm4" }
-trybuild = "1.0.64"
+trybuild = "1.0.72"
